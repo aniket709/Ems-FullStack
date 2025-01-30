@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'; // Combine the imports
 import { listEmployee } from '../Service/EmployeeService';
+import { useNavigate } from 'react-router-dom';
 
 const ListEmployeeComponent = () => {
   const [employee, setEmployee] = useState([]); // Corrected to useState
+  const navigator=useNavigate();
 
   useEffect(() => {
     listEmployee()
@@ -14,9 +16,15 @@ const ListEmployeeComponent = () => {
       });
   }, []);
 
+  function addNewEmployee(){
+    navigator('/add-employee')
+
+  }
+
   return (
     <div className="container">
       <h2 className="text-center">List of Employees</h2>
+      <button className='btn btn-primary' onClick={addNewEmployee}> Add-Employee</button>
       <table className="table table-striped table-bordered">
         <thead>
           <tr>

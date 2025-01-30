@@ -1,15 +1,23 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import Helloworld from './Helloworld'
 import ListEmployeeComponent from './Components/ListEmployeeComponent'
+import HeaderComponent from './Components/HeaderComponent'
+import FooterComponent from './Components/FooterComponent'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import EmployeeComponent from './Components/EmployeeComponenet'
 
 function App() {
-  return(
-    
+  return (
     <>
- <ListEmployeeComponent/>
+      <BrowserRouter>
+        <HeaderComponent />
+        <Routes>
+          <Route path="/" element={<ListEmployeeComponent />} />
+          <Route path="/employee" element={<ListEmployeeComponent />} />
+          <Route path="/add-employee" element={<EmployeeComponent />} /> {/* Fixed typo here */}
+        </Routes>
+        <FooterComponent />
+      </BrowserRouter>
     </>
   )
 }
