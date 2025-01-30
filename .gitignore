@@ -1,0 +1,6 @@
+# Ignore node_modules
+Ems-Frontend/node_modules/
+
+# Ignore build outputs (frontend and backend)
+Ems-Frontend/target/
+Ems-backend/target/
