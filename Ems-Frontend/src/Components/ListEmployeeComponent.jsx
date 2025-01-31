@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 const ListEmployeeComponent = () => {
   const [employee, setEmployee] = useState([]); // Corrected to useState
-  const navigator=useNavigate();
+  const navigator = useNavigate();
 
   useEffect(() => {
     listEmployee()
@@ -17,20 +17,24 @@ const ListEmployeeComponent = () => {
   }, []);
 
   function addNewEmployee(){
-    navigator('/add-employee')
+    navigator('/add-employee');
+  }
 
+  function updateEmployee(id){
+    navigator(`/edit-employee/${id}`);
   }
 
   return (
     <div className="container">
       <h2 className="text-center">List of Employees</h2>
-      <button className='btn btn-primary' onClick={addNewEmployee}> Add-Employee</button>
+      <button className='btn btn-primary' onClick={addNewEmployee}> Add Employee</button>
       <table className="table table-striped table-bordered">
         <thead>
           <tr>
-            <th>Employee first_name</th>
-            <th>Employee last_name</th>
+            <th>Employee First Name</th>
+            <th>Employee Last Name</th>
             <th>Employee Email</th>
+            <th>Actions</th>
           </tr>
         </thead>
         <tbody>
@@ -39,6 +43,9 @@ const ListEmployeeComponent = () => {
               <td>{employee.first_name}</td>
               <td>{employee.last_name}</td>
               <td>{employee.email}</td> {/* Fixed typo: 'emai' to 'email' */}
+              <td>
+                <button className='btn btn-info' onClick={() => updateEmployee(employee.id)}>Update</button>
+              </td>
             </tr>
           ))}
         </tbody>

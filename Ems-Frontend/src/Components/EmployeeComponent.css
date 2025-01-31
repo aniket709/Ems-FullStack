@@ -1,0 +1,96 @@
+/* EmployeeComponent.css */
+.employee-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    background-color: #f4f7fc;
+    padding: 20px;
+  }
+  
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .header-left {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .header-center {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    flex-grow: 1;
+    margin-left: -20px; /* Adjust this value to move it more to the left */
+  }
+  
+  .employee-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px; /* Ensure spacing between card and footer */
+  }
+  
+  .employee-card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .form-control:focus {
+    border-color: #4CAF50;
+    outline: none;
+  }
+  
+  .btn-save {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px; /* Ensure space between form and button */
+  }
+  
+  .btn-save:hover {
+    background-color: #45a049;
+  }
+  
+  .btn-save:active {
+    background-color: #3e8e41;
+  }
+  
