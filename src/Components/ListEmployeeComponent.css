@@ -1,0 +1,105 @@
+/* ListEmployeeComponent.css */
+
+.employee-list-container {
+    margin: 20px;
+    text-align: center; /* Center the content */
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .employee-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #5C6BC0;
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  button {
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  /* Add space between the Edit and Delete buttons */
+  button + button {
+    margin-left: 20px;
+  }
+  
+  /* Add button style */
+  button.btn-add {
+    background-color: #2E7D32; /* Green for Add */
+  }
+  
+  button.btn-add:hover {
+    background-color: #388E3C;
+  }
+  
+  /* Edit button style */
+  button.edit-button {
+    background-color: #1976D2; /* Blue for Edit */
+  }
+  
+  button.edit-button:hover {
+    background-color: #1565C0;
+  }
+  
+  /* Delete button style */
+  button.delete-button {
+    background-color: #D32F2F; /* Red for Delete */
+  }
+  
+  button.delete-button:hover {
+    background-color: #C2185B;
+  }
+  
+  /* Styling the table */
+  table {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    text-align: center;
+  }
+  
+  button:disabled {
+    background-color: #BDBDBD;
+    cursor: not-allowed;
+  }
+  

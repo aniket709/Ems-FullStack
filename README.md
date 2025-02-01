@@ -4,15 +4,15 @@ This project demonstrates a full-stack web application that performs CRUD operat
 
 ## Features
 
-  -Backend (Spring Boot):
-  - Implements RESTful APIs to handle CRUD operations.
-  - Uses  Spring Data JPA for database interaction with MySQL.
-  - Handles data validation, error handling, and service-layer logic.
+  - Backend (Spring Boot):
+    - Implements RESTful APIs to handle CRUD operations.
+    - Uses Spring Data JPA for database interaction with MySQL.
+    - Handles data validation, error handling, and service-layer logic.
   
-- Frontend (React.js):
-  - Provides a dynamic user interface to interact with the backend API.
-  - Allows users to perform CRUD operations with real-time updates.
-  - Uses  React Hooks and Axios  for making API calls.
+  - Frontend (React.js):
+    - Provides a dynamic user interface to interact with the backend API.
+    - Allows users to perform CRUD operations with real-time updates.
+    - Uses React Hooks and Axios for making API calls.
   
 ## Technologies Used
 
